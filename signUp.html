@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .page {
+        min-height: 500px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-container {
+        width: 400px;
+        height: 300px;
+        border: 1px solid black;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background: rgb(12, 12, 12)
+    }
+    form {
+        /* background: rgb(245, 245, 245); */
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: rgb(245, 245, 245);
+        cursor: pointer;
+        text-align: left;
+
+    }
+    input[type='text'],input[type='password'] {
+        border: none;
+        outline: none;
+        background: rgb(245, 245, 245);
+        width: 200px;
+        line-height: 30px;
+        font-size: 20px;
+        color: rgb(42, 42, 42);
+        font-family: sans-serif;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+    .login{
+        margin: 0 0 10px 50px;
+    }
+    .pass {
+        margin: 0 0 10px 10px;
+    }
+    button{
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: .5em;
+        box-shadow: 0px 2px 3px rgb(255, 255, 255);
+        transition: .250ms ease-in-out all;
+        cursor: pointer;
+    }
+    button:active {
+        transform: translateY(2px);
+        box-shadow: 0px 1px 1px rgb(255, 255, 255);
+    }
+    input[type='radio'] {
+        background: red;
+    }
+    label[for='male'] {
+        margin: 0 0 0 20px;
+
+    }
+
+</style>
+<body>
+    <header>
+        <nav class="nav-responsive">
+           <input type="checkbox"  id="check">
+           <label for="check">
+              <i class="fas fa-bars" id="btn"></i>
+              <i class="fas fa-times" id="cancel"></i>
+           </label>
+           <img src="pic/logo.png" alt="">
+           <ul class="ul-nav">
+              <li class="li-nav"><a href="index.html">home</a></li>
+              <li class="li-nav"><a href="#">laptop</a></li>
+              <li class="li-nav"><a href="#">console</a></li>
+              <li class="li-nav"><a href="#">about</a></li>
+              <li class="li-nav"><a href="#">contact</a></li>
+              <li class="li-nav"><a href="signUp.html">sign up</a></li>
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page">
+            <div class="form-container">
+                <form action="">
+                    login: <input type="text" placeholder="email" class="login"> <br>
+                    password: <input type="password" placeholder="password" class="pass"><br>
+                    sex : <label for="male">male</label> <input type="radio" id="male"> <label for="female" >female</label> <input type="radio" id="femal"><br>
+                    password: <input type="password" placeholder="password" class="pass"><br>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -198,13 +198,14 @@ label #cancel {
       display: block;
    }
    .nav-responsive .ul-nav{
-      position: fixed;
+      position: absolute;
       width: 100%;
       height: calc(100vh - 100px);
       left: -100%;
       text-align: center;
       background:rgb(54, 54, 54);
       transition: all .5s;
+      z-index: 2;
    }
    .li-nav a {
       font-size: .65em;
